@@ -1,0 +1,533 @@
+/* Prevent scrolling and ensure full height */
+html, body {
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Global Styles */
+body {
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Top Right Controls */
+#topControls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Global Toggle Button */
+.global-toggle {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Schedule button style */
+.schedule-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Main container – some top and bottom margin */
+.main-container {
+  width: 90vw;
+  margin: 30px auto 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Widget styles */
+.widget {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  width: 95%;
+  max-width: 700px;
+  position: relative;
+}
+
+/* Transparent blur mode for backgrounds 3–6 */
+.blur-widget {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(5px);
+}
+
+/* Additional class to force text white on blurred widgets (for backgrounds 4–5) */
+.blur-dark {
+  color: #fff !important;
+}
+.blur-dark * {
+  color: #fff !important;
+}
+
+/* Dark mode for background2 */
+.dark-widget {
+  background: rgba(51, 51, 51, 0.8) !important;
+  color: #fff !important;
+}
+.dark-widget * {
+  color: #fff !important;
+}
+
+/* Location element for main & grid widgets */
+.location {
+  position: relative;
+  padding-top: 40px; /* room for flag */
+  font-size: 1.8rem;
+  color: #555;
+}
+
+/* Flag container for main & grid widgets */
+.flag-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+.flag-container img {
+  max-width: 48px;
+  height: auto;
+}
+
+/* Title container for main & grid widgets */
+.title-container {
+  text-align: center;
+  width: 100%;
+}
+
+/* Main widget time */
+.main-widget h1, #mainTimeInput {
+  font-size: 3.5rem;
+  margin: 0.5rem 0 1rem;
+  color: #333;
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+
+/* Widget actions */
+.widget-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Buttons general */
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+/* Circle Buttons */
+.circle-button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Globe button (blue) */
+.globe-button {
+  background-color: #007BFF;
+}
+
+/* Grid Container: EXACT 3x2 layout */
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  grid-template-rows: repeat(2, auto);   /* exactly 2 rows */
+  justify-items: center;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Grid item styles */
+.grid-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+  min-height: 200px;
+}
+
+/* Grid item time display */
+.grid-item h2 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+/* Time difference text */
+.time-diff {
+  font-size: 1.1rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+/* Add Widget Placeholder Styling */
+.add-widget {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  font-size: 3rem;
+  cursor: pointer;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Meeting Pop-up Styling */
+.meeting-popup {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 50;
+}
+.meeting-popup button {
+  margin: 0.5rem;
+}
+
+/* Scheduling Container */
+.scheduling-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Updated Scheduling Input Styling */
+.scheduling-input {
+  box-sizing: border-box;
+  width: 6rem;
+  padding: 0.75rem;
+  font-size: 3.5rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  text-align: center;
+  color: #333;
+}
+.scheduling-input::-webkit-inner-spin-button,
+.scheduling-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.scheduling-input {
+  -moz-appearance: textfield;
+}
+
+/* Updated Time Separator Styling */
+.time-separator {
+  font-size: 3.5rem;
+  color: #333;
+}
+
+/* AM/PM Select Styling */
+.ampm-select {
+  font-size: 3.5rem;
+  padding: 0.75rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  color: #333;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Settings Modal Specific Styling */
+.background-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.background-options .bg-preview {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: border 0.2s;
+}
+.background-options .bg-preview:hover {
+  border: 2px solid #007BFF;
+}
+
+/* Updated Add Widget Button (cssbuttons-io style) */
+.cssbuttons-io-button {
+  background: #007BFF;
+  color: white;
+  font-family: inherit;
+  padding: 0.3em 0.35em 0.3em 1em;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 0.8em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.2em -0.5em #0056b3;
+  overflow: hidden;
+  position: relative;
+  height: 2.4em;
+  padding-right: 2.8em;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.cssbuttons-io-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+}
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 0.5em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  width: 2em;
+  border-radius: 0.6em;
+  box-shadow: 0.1em 0.1em 0.5em 0.2em #0056b3;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+.cssbuttons-io-button .icon svg {
+  width: 1em;
+  transition: transform 0.3s;
+  color: #0056b3;
+}
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 450px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
+}
+.close:hover {
+  color: #555;
+}
+
+#countrySearch {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+#countrySearch:focus {
+  border-color: #007BFF;
+}
+
+#countryList {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.country-item {
+  padding: 0.6rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  transition: background-color 0.2s ease;
+}
+.country-item:hover {
+  background-color: #f9f9f9;
+}
+.country-item img {
+  margin-right: 10px;
+  width: 32px;
+  height: auto;
+}
+
+/* Scheduling Banner */
+#schedulingBanner {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffc107;
+  color: #333;
+  padding: 0.7rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 25;
+  font-size: 1rem;
+}
+#leaveSchedulingBtn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Additional Close Button Styling */
+.close {
+  font-size: 28px;
+  color: #999;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.close:hover {
+  color: #555;
+}
+
+/* Fullscreen mode styling */
+:fullscreen .main-container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+:fullscreen #topControls,
+:fullscreen #scheduleButton,
+:fullscreen #addWidget,
+:fullscreen #schedulingBanner {
+  display: none;
+}
+
+/* Trash Button (unchanged) */
+.trash-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border: 0px solid transparent;
+  background-color: rgba(100,77,237,0.08);
+  border-radius: 1.25em;
+  transition: all 0.2s linear;
+}
+.trash-button:hover {
+  box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+    8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+    17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+    36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+    99px 72px 143px rgba(0, 0, 0, 0.08);
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 4em;
+  background-color: rgba(0, 0, 0, 0.253);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 110%;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
