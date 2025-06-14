@@ -7,8 +7,22 @@ function convertUTCOffsetToIANA(offsetStr) {
   return sign === "+" ? `Etc/GMT-${hours}` : `Etc/GMT+${hours}`;
 }
 
+function getGMTOffsetLabel(zone) {
+  try {
+    const parts = new Intl.DateTimeFormat('en-US', {
+      timeZone: zone,
+      timeZoneName: 'shortOffset'
+    }).formatToParts(new Date());
+    const tzName = parts.find(p => p.type === 'timeZoneName');
+    return tzName ? tzName.value : 'GMT';
+  } catch (e) {
+    return 'GMT';
+  }
+}
+
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { convertUTCOffsetToIANA };
+  module.exports = { convertUTCOffsetToIANA, getGMTOffsetLabel };
 } else {
   window.convertUTCOffsetToIANA = convertUTCOffsetToIANA;
+  window.getGMTOffsetLabel = getGMTOffsetLabel;
 }
