@@ -2,37 +2,37 @@
   {
     "cca2": "US",
     "name": {"common": "United States"},
-    "flags": {"png": "https://flagcdn.com/us.png"},
+    "flags": {"png": "https://flagcdn.com/w320/us.png"},
     "timezones": ["UTC-05:00"]
   },
   {
     "cca2": "GB",
     "name": {"common": "United Kingdom"},
-    "flags": {"png": "https://flagcdn.com/gb.png"},
+    "flags": {"png": "https://flagcdn.com/w320/gb.png"},
     "timezones": ["UTC+00:00"]
   },
   {
     "cca2": "DE",
     "name": {"common": "Germany"},
-    "flags": {"png": "https://flagcdn.com/de.png"},
+    "flags": {"png": "https://flagcdn.com/w320/de.png"},
     "timezones": ["UTC+01:00"]
   },
   {
     "cca2": "IN",
     "name": {"common": "India"},
-    "flags": {"png": "https://flagcdn.com/in.png"},
+    "flags": {"png": "https://flagcdn.com/w320/in.png"},
     "timezones": ["UTC+05:30"]
   },
   {
     "cca2": "JP",
     "name": {"common": "Japan"},
-    "flags": {"png": "https://flagcdn.com/jp.png"},
+    "flags": {"png": "https://flagcdn.com/w320/jp.png"},
     "timezones": ["UTC+09:00"]
   },
   {
     "cca2": "AU",
     "name": {"common": "Australia"},
-    "flags": {"png": "https://flagcdn.com/au.png"},
+    "flags": {"png": "https://flagcdn.com/w320/au.png"},
     "timezones": ["UTC+10:00"]
   }
 ]
