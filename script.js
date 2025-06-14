@@ -78,15 +78,17 @@ function updateWidgetStyles(bgUrl) {
   if (bgUrl.includes("background2.jpg")) {
     widgets.forEach(widget => widget.classList.add("dark-widget"));
   }
-  // If background4 or background5 => blur + white text
-  else if (bgUrl.includes("background4.jpg") || bgUrl.includes("background5.jpg")) {
+  // If background5 => blur + white text
+  else if (bgUrl.includes("background5.jpg")) {
     widgets.forEach(widget => {
       widget.classList.add("blur-widget");
       widget.classList.add("blur-dark");
     });
   }
-  // If background3 or background6 => blur only
-  else if (bgUrl.includes("background3.jpg") || bgUrl.includes("background6.jpg")) {
+  // If background3, background4 or background6 => blur only
+  else if (bgUrl.includes("background3.jpg") ||
+           bgUrl.includes("background4.jpg") ||
+           bgUrl.includes("background6.jpg")) {
     widgets.forEach(widget => widget.classList.add("blur-widget"));
   }
   // background1 => no extra style

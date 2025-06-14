@@ -90,7 +90,7 @@ body {
   backdrop-filter: blur(5px);
 }
 
-/* Additional class to force text white on blurred widgets (for backgrounds 4–5) */
+/* Additional class to force text white on blurred widgets (for background 5) */
 .blur-dark {
   color: #fff !important;
 }
