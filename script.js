@@ -345,7 +345,15 @@ Promise.all([
     console.error('Error loading IANA zone map:', err);
     return {};
   }),
-  fetch('https://restcountries.com/v3.1/all').then(r => r.json())
+  fetch('https://restcountries.com/v3.1/all')
+    .then(r => {
+      if (!r.ok) throw new Error('Network response was not ok');
+      return r.json();
+    })
+    .catch(err => {
+      console.warn('Falling back to local country data:', err);
+      return fetch('countries-fallback.json').then(r => r.json()).catch(() => []);
+    })
 ]).then(([zoneMap, data]) => {
   ianaZoneMap = zoneMap;
   countriesData = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
