@@ -389,6 +389,21 @@ const countrySearchInput = document.getElementById('countrySearch');
 const clearSearchBtn = document.getElementById('clearSearch');
 const countryListDiv = document.getElementById('countryList');
 const closeModalSpan = document.getElementById('closeModal');
+const countriesTab = document.getElementById('countriesTab');
+const zonesTab = document.getElementById('zonesTab');
+
+function switchTab(tab) {
+  currentTab = tab;
+  countriesTab.classList.toggle('active', tab === 'countries');
+  zonesTab.classList.toggle('active', tab === 'zones');
+  countrySearchInput.placeholder = tab === 'countries'
+    ? 'Search for a country...'
+    : 'Search for a time zone...';
+  renderList();
+}
+
+countriesTab.addEventListener('click', () => switchTab('countries'));
+zonesTab.addEventListener('click', () => switchTab('zones'));
 
 document.getElementById('changeMainTimeZone').addEventListener('click', () => {
   selectedWidgetIndex = -1;
@@ -401,7 +416,7 @@ closeModalSpan.addEventListener('click', () => {
 
 clearSearchBtn.addEventListener('click', () => {
   countrySearchInput.value = '';
-  renderCountryList(countriesData);
+  renderList();
   countrySearchInput.focus();
 });
 window.addEventListener('click', (event) => {
@@ -411,6 +426,8 @@ window.addEventListener('click', (event) => {
 });
 
 let countriesData = [];
+let timeZonesData = [];
+let currentTab = 'countries';
 Promise.all([
   fetch('iana-zones.json').then(r => r.json()).catch(err => {
     console.error('Error loading IANA zone map:', err);
@@ -425,61 +442,96 @@ Promise.all([
 ]).then(([zoneMap, data]) => {
   ianaZoneMap = zoneMap;
   countriesData = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
-  renderCountryList(countriesData);
+  if (typeof Intl.supportedValuesOf === 'function') {
+    timeZonesData = Intl.supportedValuesOf('timeZone');
+  } else {
+    const tzSet = new Set();
+    data.forEach(c => (c.timezones || []).forEach(tz => tzSet.add(convertUTCOffsetToIANA(tz))));
+    timeZonesData = Array.from(tzSet);
+  }
+  timeZonesData.sort();
+  switchTab('countries');
 }).catch(err => console.error('Error fetching countries:', err));
 
-function renderCountryList(countries) {
+function renderList() {
   countryListDiv.innerHTML = '';
-  countries.forEach(country => {
-    const countryName = country.name.common;
-    const flagUrl = country.flags && country.flags.png ? country.flags.png : '';
-    let newTZ;
-    if (ianaZoneMap[country.cca2]) {
-      newTZ = ianaZoneMap[country.cca2];
-    } else if (country.cca2 === "JE" || country.cca2 === "GG") {
-      newTZ = "Europe/London";
-    } else if (country.timezones && country.timezones.length > 0) {
-      newTZ = convertUTCOffsetToIANA(country.timezones[0]);
-    } else {
-      newTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    }
-    
-    const countryItem = document.createElement('div');
-    countryItem.className = 'country-item';
-    countryItem.innerHTML = `
-      <img src="${flagUrl}" alt="${countryName} flag" width="32" style="vertical-align:middle; margin-right:10px;">
-      ${countryName}
-    `;
-    countryItem.addEventListener('click', () => {
-      if (selectedWidgetIndex === -1) {
-        mainWidget.timeZone = newTZ;
-        mainWidget.name = countryName;
-        mainWidget.flagUrl = flagUrl;
-        updateMainWidgetDisplay();
-      } else if (selectedWidgetIndex !== null) {
-        gridWidgets[selectedWidgetIndex].timeZone = newTZ;
-        gridWidgets[selectedWidgetIndex].title = `
-          <div class="flag-container">
-            <img src="${flagUrl}" alt="${countryName} flag">
-          </div>
-          <div class="title-container">${countryName}</div>
-        `;
-        gridWidgets[selectedWidgetIndex].flagUrl = flagUrl;
+  const query = countrySearchInput.value.toLowerCase();
+  if (currentTab === 'countries') {
+    const filtered = countriesData.filter(c => c.name.common.toLowerCase().includes(query));
+    filtered.forEach(country => {
+      const countryName = country.name.common;
+      const flagUrl = country.flags && country.flags.png ? country.flags.png : '';
+      let newTZ;
+      if (ianaZoneMap[country.cca2]) {
+        newTZ = ianaZoneMap[country.cca2];
+      } else if (country.cca2 === 'JE' || country.cca2 === 'GG') {
+        newTZ = 'Europe/London';
+      } else if (country.timezones && country.timezones.length > 0) {
+        newTZ = convertUTCOffsetToIANA(country.timezones[0]);
+      } else {
+        newTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
       }
-      saveSettings();
-      countryModal.style.display = "none";
-      countrySearchInput.value = "";
-      renderCountryList(countriesData);
-      renderGrid();
+
+      const item = document.createElement('div');
+      item.className = 'country-item';
+      item.innerHTML = `
+        <img src="${flagUrl}" alt="${countryName} flag" width="32" style="vertical-align:middle; margin-right:10px;">
+        ${countryName}
+      `;
+      item.addEventListener('click', () => {
+        if (selectedWidgetIndex === -1) {
+          mainWidget.timeZone = newTZ;
+          mainWidget.name = countryName;
+          mainWidget.flagUrl = flagUrl;
+          updateMainWidgetDisplay();
+        } else if (selectedWidgetIndex !== null) {
+          gridWidgets[selectedWidgetIndex].timeZone = newTZ;
+          gridWidgets[selectedWidgetIndex].title = `
+            <div class="flag-container">
+              <img src="${flagUrl}" alt="${countryName} flag">
+            </div>
+            <div class="title-container">${countryName}</div>
+          `;
+          gridWidgets[selectedWidgetIndex].flagUrl = flagUrl;
+        }
+        saveSettings();
+        countryModal.style.display = 'none';
+        countrySearchInput.value = '';
+        renderList();
+        renderGrid();
+      });
+      countryListDiv.appendChild(item);
     });
-    countryListDiv.appendChild(countryItem);
-  });
+  } else {
+    const filtered = timeZonesData.filter(tz => tz.toLowerCase().includes(query));
+    filtered.forEach(zone => {
+      const item = document.createElement('div');
+      item.className = 'country-item';
+      item.textContent = zone;
+      item.addEventListener('click', () => {
+        if (selectedWidgetIndex === -1) {
+          mainWidget.timeZone = zone;
+          mainWidget.name = zone;
+          mainWidget.flagUrl = '';
+          updateMainWidgetDisplay();
+        } else if (selectedWidgetIndex !== null) {
+          gridWidgets[selectedWidgetIndex].timeZone = zone;
+          gridWidgets[selectedWidgetIndex].title = zone;
+          gridWidgets[selectedWidgetIndex].flagUrl = '';
+        }
+        saveSettings();
+        countryModal.style.display = 'none';
+        countrySearchInput.value = '';
+        renderList();
+        renderGrid();
+      });
+      countryListDiv.appendChild(item);
+    });
+  }
 }
 
 countrySearchInput.addEventListener('input', () => {
-  const query = countrySearchInput.value.toLowerCase();
-  const filtered = countriesData.filter(country => country.name.common.toLowerCase().includes(query));
-  renderCountryList(filtered);
+  renderList();
 });
 
 // ---------- Scheduling Mode Functionality ----------
