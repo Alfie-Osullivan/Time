@@ -291,38 +291,23 @@ button {
 }
 
 /* Settings Modal Specific Styling */
-.background-slider {
-  display: flex;
-  align-items: center;
+.background-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
 }
 
-.background-options {
-  display: flex;
-  overflow-x: auto;
-  gap: 0.5rem;
-  scroll-snap-type: x mandatory;
-}
-.background-options .bg-preview {
-  width: 80px;
+.background-grid .bg-preview {
+  width: 100%;
   height: 60px;
   object-fit: cover;
   border: 2px solid transparent;
   cursor: pointer;
   border-radius: 0.5rem;
-  scroll-snap-align: center;
-  flex: 0 0 auto;
   transition: border 0.2s;
 }
-.background-options .bg-preview:hover {
+.background-grid .bg-preview:hover {
   border: 2px solid #007BFF;
-}
-
-.slide-btn {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
 }
 
 /* Updated Add Widget Button (cssbuttons-io style) */
