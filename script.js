@@ -284,6 +284,11 @@ function renderGrid() {
     });
     gridContainer.appendChild(addItem);
   }
+
+  const storedBg = localStorage.getItem("backgroundImage");
+  if (storedBg) {
+    updateWidgetStyles(storedBg);
+  }
 }
 
 // ---------- Settings Modal Functionality ----------
