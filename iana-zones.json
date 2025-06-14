@@ -1,6 +1,8 @@
 {
   "US": "America/New_York",
   "GB": "Europe/London",
+  "JE": "Europe/Jersey",
+  "GG": "Europe/Guernsey",
   "FR": "Europe/Paris",
   "DE": "Europe/Berlin",
   "ES": "Europe/Madrid",

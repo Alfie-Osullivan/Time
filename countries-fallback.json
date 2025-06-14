@@ -34,5 +34,23 @@
     "name": {"common": "Australia"},
     "flags": {"png": "https://flagcdn.com/w320/au.png"},
     "timezones": ["UTC+10:00"]
+  },
+  {
+    "cca2": "AE",
+    "name": {"common": "United Arab Emirates"},
+    "flags": {"png": "https://flagcdn.com/w320/ae.png"},
+    "timezones": ["UTC+04:00"]
+  },
+  {
+    "cca2": "JE",
+    "name": {"common": "Jersey"},
+    "flags": {"png": "https://flagcdn.com/w320/je.png"},
+    "timezones": ["UTC+00:00"]
+  },
+  {
+    "cca2": "GG",
+    "name": {"common": "Guernsey"},
+    "flags": {"png": "https://flagcdn.com/w320/gg.png"},
+    "timezones": ["UTC+00:00"]
   }
 ]
