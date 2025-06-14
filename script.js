@@ -410,7 +410,11 @@ const countriesTab = document.getElementById('countriesTab');
 const zonesTab = document.getElementById('zonesTab');
 
 let activeTab = 'countries';
-let timeZones = [];
+// Predefined UTC offsets from -11 to +13
+let timeZones = Array.from({ length: 25 }, (_, i) => {
+  const offset = i - 11;
+  return `UTC${offset >= 0 ? '+' : ''}${offset}`;
+});
 
 function updateTabStyles() {
   countriesTab.classList.toggle('active', activeTab === 'countries');
@@ -482,8 +486,6 @@ Promise.all([
 ]).then(([zoneMap, data]) => {
   ianaZoneMap = zoneMap;
   countriesData = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
-  timeZones = [...new Set(countriesData.flatMap(c => c.timezones || []))]
-    .sort((a, b) => a.localeCompare(b));
   renderCountryList(countriesData);
 }).catch(err => console.error('Error fetching countries:', err));
 
@@ -540,16 +542,16 @@ function renderTimeZoneList(zones) {
   zones.forEach(zone => {
     const tzItem = document.createElement('div');
     tzItem.className = 'country-item';
-    const offsetLabel = getGMTOffsetLabel(zone);
-    tzItem.textContent = `${offsetLabel} - ${zone}`;
+    tzItem.textContent = zone;
     tzItem.addEventListener('click', () => {
+      const iana = convertUTCOffsetToIANA(zone);
       if (selectedWidgetIndex === -1) {
-        mainWidget.timeZone = zone;
+        mainWidget.timeZone = iana;
         mainWidget.name = '';
         mainWidget.flagUrl = '';
         updateMainWidgetDisplay();
       } else if (selectedWidgetIndex !== null) {
-        gridWidgets[selectedWidgetIndex].timeZone = zone;
+        gridWidgets[selectedWidgetIndex].timeZone = iana;
         gridWidgets[selectedWidgetIndex].title = zone;
         gridWidgets[selectedWidgetIndex].flagUrl = '';
       }
