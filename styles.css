@@ -27,10 +27,18 @@ body {
   position: fixed;
   top: 10px;
   left: 10px;
-  color: white;
-  text-decoration: underline;
-  cursor: pointer;
   z-index: 20;
+}
+
+.version-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  background-image: linear-gradient(#34d058, #28a745);
 }
 
 /* Global Toggle Button */
