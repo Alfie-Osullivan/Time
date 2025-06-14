@@ -462,10 +462,14 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  max-height: 60vh;
+  overflow-y: auto;
 }
 
 .version-entry {
   line-height: 1.4;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .country-item {

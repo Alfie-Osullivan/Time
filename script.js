@@ -321,7 +321,7 @@ versionLink.addEventListener("click", (e) => {
     .then(r => r.json())
     .then(data => {
       versionList.innerHTML = "";
-      data.forEach(entry => {
+      data.slice().reverse().forEach(entry => {
         const container = document.createElement("div");
         container.className = "version-entry";
 
