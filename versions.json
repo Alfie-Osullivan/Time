@@ -12,5 +12,12 @@
     "type": "Patch",
     "title": "Fixes",
     "description": "Fixed known issues, the time shown for Jersey, Channel Islands may be incorrect; widget transparency can disappear after changes on certain backgrounds; and the main widget may occasionally fall out of sync."
+  },
+  {
+    "version": "1.2.0",
+    "name": "UI Update",
+    "type": "Update",
+    "title": "Button & UI",
+    "description": "Enhanced button design getting rid of the flat buttons, UI enhancements for better assessability rating."
   }
 ]
