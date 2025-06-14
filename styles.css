@@ -392,6 +392,25 @@ button {
   display: flex;
   flex-direction: column;
 }
+
+.tab-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.tab.active {
+  background: #007BFF;
+  color: #fff;
+}
 /* Close Button */
 .close {
   position: absolute;
