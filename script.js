@@ -5,6 +5,7 @@ let use24Hour = false; // default hours format
 let selectedWidgetIndex = null;
 let schedulingMode = false;
 let scheduledTime = null;
+let ianaZoneMap = {};
 
 function loadSettings() {
   const storedMainWidget = localStorage.getItem('mainWidget');
@@ -339,13 +340,17 @@ window.addEventListener('click', (event) => {
 });
 
 let countriesData = [];
-fetch('https://restcountries.com/v3.1/all')
-  .then(response => response.json())
-  .then(data => {
-    countriesData = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
-    renderCountryList(countriesData);
-  })
-  .catch(err => console.error('Error fetching countries:', err));
+Promise.all([
+  fetch('iana-zones.json').then(r => r.json()).catch(err => {
+    console.error('Error loading IANA zone map:', err);
+    return {};
+  }),
+  fetch('https://restcountries.com/v3.1/all').then(r => r.json())
+]).then(([zoneMap, data]) => {
+  ianaZoneMap = zoneMap;
+  countriesData = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+  renderCountryList(countriesData);
+}).catch(err => console.error('Error fetching countries:', err));
 
 function renderCountryList(countries) {
   countryListDiv.innerHTML = '';
@@ -353,7 +358,9 @@ function renderCountryList(countries) {
     const countryName = country.name.common;
     const flagUrl = country.flags && country.flags.png ? country.flags.png : '';
     let newTZ;
-    if (country.cca2 === "JE") {
+    if (ianaZoneMap[country.cca2]) {
+      newTZ = ianaZoneMap[country.cca2];
+    } else if (country.cca2 === "JE") {
       newTZ = "Europe/London";
     } else if (country.timezones && country.timezones.length > 0) {
       newTZ = convertUTCOffsetToIANA(country.timezones[0]);
