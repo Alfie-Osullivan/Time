@@ -144,6 +144,19 @@ function convertUTCOffsetToIANA(offsetStr) {
   return sign === "+" ? `Etc/GMT-${hours}` : `Etc/GMT+${hours}`;
 }
 
+function getGMTOffsetLabel(zone) {
+  try {
+    const parts = new Intl.DateTimeFormat('en-US', {
+      timeZone: zone,
+      timeZoneName: 'shortOffset'
+    }).formatToParts(new Date());
+    const tzName = parts.find(p => p.type === 'timeZoneName');
+    return tzName ? tzName.value : 'GMT';
+  } catch (e) {
+    return 'GMT';
+  }
+}
+
 function updateMainWidgetDisplay() {
   const el = document.getElementById('mainLocation');
   if (mainWidget.name && mainWidget.flagUrl) {
@@ -527,7 +540,8 @@ function renderTimeZoneList(zones) {
   zones.forEach(zone => {
     const tzItem = document.createElement('div');
     tzItem.className = 'country-item';
-    tzItem.textContent = zone;
+    const offsetLabel = getGMTOffsetLabel(zone);
+    tzItem.textContent = `${offsetLabel} - ${zone}`;
     tzItem.addEventListener('click', () => {
       if (selectedWidgetIndex === -1) {
         mainWidget.timeZone = zone;
