@@ -368,7 +368,7 @@ function renderCountryList(countries) {
     let newTZ;
     if (ianaZoneMap[country.cca2]) {
       newTZ = ianaZoneMap[country.cca2];
-    } else if (country.cca2 === "JE") {
+    } else if (country.cca2 === "JE" || country.cca2 === "GG") {
       newTZ = "Europe/London";
     } else if (country.timezones && country.timezones.length > 0) {
       newTZ = convertUTCOffsetToIANA(country.timezones[0]);
