@@ -6,11 +6,14 @@ let selectedWidgetIndex = null;
 let schedulingMode = false;
 let scheduledTime = null;
 let ianaZoneMap = {};
+let colorTheme = 'system';
+let transparentWidgets = false;
 
 function loadSettings() {
   const storedMainWidget = localStorage.getItem('mainWidget');
   const storedGridWidgets = localStorage.getItem('gridWidgets');
-  const storedBackground = localStorage.getItem('backgroundImage');
+  const storedTheme = localStorage.getItem('colorTheme');
+  const storedTransparent = localStorage.getItem('transparentWidgets');
   const storedHoursFormat = localStorage.getItem('use24Hour');
 
   // Load main widget
@@ -53,10 +56,19 @@ function loadSettings() {
   if (storedHoursFormat !== null) {
     use24Hour = (storedHoursFormat === "true");
   }
-  
-  // Set background if stored
-  if (storedBackground) {
-    document.body.style.backgroundImage = `url(${storedBackground})`;
+
+  if (storedTheme) {
+    colorTheme = storedTheme;
+    applyTheme(colorTheme);
+    const themeRadios = document.querySelectorAll('input[name="theme"]');
+    themeRadios.forEach(r => { r.checked = (r.value === colorTheme); });
+  }
+
+  if (storedTransparent !== null) {
+    transparentWidgets = (storedTransparent === 'true');
+    const check = document.getElementById('transparentWidgets');
+    if (check) check.checked = transparentWidgets;
+    applyWidgetTransparency(transparentWidgets);
   }
 }
 
@@ -65,31 +77,23 @@ function saveSettings() {
   localStorage.setItem('mainWidget', JSON.stringify(mainWidget));
   localStorage.setItem('gridWidgets', JSON.stringify(gridWidgets));
   localStorage.setItem('use24Hour', use24Hour);
+  localStorage.setItem('colorTheme', colorTheme);
+  localStorage.setItem('transparentWidgets', transparentWidgets);
 }
 
 // ---------- Update Widget Styles Based on Background ----------
-function updateWidgetStyles(bgUrl) {
-  // All "widget" elements (main + bottom)
-  const widgets = document.querySelectorAll(".widget");
-  widgets.forEach(widget => {
-    widget.classList.remove("blur-widget", "dark-widget", "blur-dark");
-  });
-  // If background2 => dark
-  if (bgUrl.includes("background2.jpg")) {
-    widgets.forEach(widget => widget.classList.add("dark-widget"));
+function applyTheme(theme) {
+  document.body.classList.remove('light-theme', 'dark-theme');
+  if (theme === 'light') {
+    document.body.classList.add('light-theme');
+  } else if (theme === 'dark') {
+    document.body.classList.add('dark-theme');
   }
-  // If background4 or background5 => blur + white text
-  else if (bgUrl.includes("background4.jpg") || bgUrl.includes("background5.jpg")) {
-    widgets.forEach(widget => {
-      widget.classList.add("blur-widget");
-      widget.classList.add("blur-dark");
-    });
-  }
-  // If background3 or background6 => blur only
-  else if (bgUrl.includes("background3.jpg") || bgUrl.includes("background6.jpg")) {
-    widgets.forEach(widget => widget.classList.add("blur-widget"));
-  }
-  // background1 => no extra style
+}
+
+function applyWidgetTransparency(enabled) {
+  const widgets = document.querySelectorAll('.widget');
+  widgets.forEach(w => w.classList.toggle('transparent-widget', enabled));
 }
 
 function getTimezoneOffset(timeZone, refTime) {
@@ -289,10 +293,8 @@ function renderGrid() {
     gridContainer.appendChild(addItem);
   }
 
-  const storedBg = localStorage.getItem("backgroundImage");
-  if (storedBg) {
-    updateWidgetStyles(storedBg);
-  }
+  applyWidgetTransparency(transparentWidgets);
+  applyTheme(colorTheme);
 }
 
 // ---------- Settings Modal Functionality ----------
@@ -362,16 +364,24 @@ window.addEventListener("click", (event) => {
   }
 });
 
-// Background previews
-const bgPreviews = document.querySelectorAll(".bg-preview");
-bgPreviews.forEach(preview => {
-  preview.addEventListener("click", () => {
-    const newBg = preview.getAttribute("data-bg");
-    document.body.style.backgroundImage = `url(${newBg})`;
-    localStorage.setItem("backgroundImage", newBg);
-    updateWidgetStyles(newBg);
+// Theme selection
+const themeRadios = document.querySelectorAll('input[name="theme"]');
+themeRadios.forEach(radio => {
+  radio.addEventListener('change', () => {
+    colorTheme = radio.value;
+    applyTheme(colorTheme);
+    saveSettings();
   });
 });
+
+const transparentCheckbox = document.getElementById('transparentWidgets');
+if (transparentCheckbox) {
+  transparentCheckbox.addEventListener('change', () => {
+    transparentWidgets = transparentCheckbox.checked;
+    applyWidgetTransparency(transparentWidgets);
+    saveSettings();
+  });
+}
 
 // Hours toggle in settings
 const hoursToggleBtn = document.getElementById("hoursToggleBtn");
@@ -555,11 +565,9 @@ loadSettings();
 renderGrid();
 updateMainWidgetDisplay();
 
-// Re-apply blur/dark styling after grid is rendered
-const storedBg = localStorage.getItem("backgroundImage");
-if (storedBg) {
-  updateWidgetStyles(storedBg);
-}
+// Apply theme and transparency after grid is rendered
+applyTheme(colorTheme);
+applyWidgetTransparency(transparentWidgets);
 updateAllTimes();
 
 
