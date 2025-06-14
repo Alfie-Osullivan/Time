@@ -300,6 +300,12 @@ const settingsButton = document.getElementById("settingsButton");
 const settingsModal = document.getElementById("settingsModal");
 const closeSettings = document.getElementById("closeSettings");
 
+// ---------- Version Modal Functionality ----------
+const versionLink = document.getElementById("versionLink");
+const versionModal = document.getElementById("versionModal");
+const closeVersion = document.getElementById("closeVersion");
+const versionList = document.getElementById("versionList");
+
 settingsButton.addEventListener("click", () => {
   document.getElementById("hoursToggleText").innerText = use24Hour ? "24h" : "12h";
   settingsModal.style.display = "flex";
@@ -307,6 +313,40 @@ settingsButton.addEventListener("click", () => {
 
 closeSettings.addEventListener("click", () => {
   settingsModal.style.display = "none";
+});
+
+versionLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  fetch("versions.json")
+    .then(r => r.json())
+    .then(data => {
+      versionList.innerHTML = "";
+      data.forEach(entry => {
+        const div = document.createElement("div");
+        if (typeof entry === "string") {
+          div.textContent = entry;
+        } else {
+          const parts = [];
+          if (entry.version) parts.push(entry.version);
+          if (entry.date) parts.push(entry.date);
+          if (entry.description) parts.push(entry.description);
+          div.textContent = parts.join(" - ");
+        }
+        versionList.appendChild(div);
+      });
+      versionModal.style.display = "flex";
+    })
+    .catch(err => console.error("Error loading versions:", err));
+});
+
+closeVersion.addEventListener("click", () => {
+  versionModal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === versionModal) {
+    versionModal.style.display = "none";
+  }
 });
 
 // Background previews

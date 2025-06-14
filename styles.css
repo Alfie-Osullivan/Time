@@ -23,6 +23,16 @@ body {
   gap: 0.5rem;
 }
 
+#versionLink {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  z-index: 20;
+}
+
 /* Global Toggle Button */
 .global-toggle {
   padding: 0.5rem 1rem;
@@ -445,6 +455,13 @@ button {
   flex-grow: 1;
   overflow-y: auto;
   padding-right: 10px;
+}
+
+#versionList {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .country-item {
