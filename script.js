@@ -307,7 +307,7 @@ const closeVersion = document.getElementById("closeVersion");
 const versionList = document.getElementById("versionList");
 
 settingsButton.addEventListener("click", () => {
-  document.getElementById("hoursToggleText").innerText = use24Hour ? "24h" : "12h";
+  document.getElementById("hoursToggleText").innerText = use24Hour ? "24-hour" : "12-hour";
   settingsModal.style.display = "flex";
 });
 
@@ -364,9 +364,6 @@ window.addEventListener("click", (event) => {
 
 // Background previews
 const bgPreviews = document.querySelectorAll(".bg-preview");
-const bgContainer = document.getElementById("backgroundOptions");
-const bgPrevBtn = document.getElementById("bgPrev");
-const bgNextBtn = document.getElementById("bgNext");
 bgPreviews.forEach(preview => {
   preview.addEventListener("click", () => {
     const newBg = preview.getAttribute("data-bg");
@@ -376,19 +373,11 @@ bgPreviews.forEach(preview => {
   });
 });
 
-bgPrevBtn.addEventListener("click", () => {
-  bgContainer.scrollBy({ left: -100, behavior: "smooth" });
-});
-
-bgNextBtn.addEventListener("click", () => {
-  bgContainer.scrollBy({ left: 100, behavior: "smooth" });
-});
-
 // Hours toggle in settings
 const hoursToggleBtn = document.getElementById("hoursToggleBtn");
 hoursToggleBtn.addEventListener("click", () => {
   use24Hour = !use24Hour;
-  document.getElementById("hoursToggleText").innerText = use24Hour ? "24h" : "12h";
+  document.getElementById("hoursToggleText").innerText = use24Hour ? "24-hour" : "12-hour";
   localStorage.setItem("use24Hour", use24Hour);
 });
 
