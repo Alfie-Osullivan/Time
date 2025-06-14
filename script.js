@@ -26,22 +26,22 @@ function loadSettings() {
           timeZone: "Europe/London",
           title: `
             <div class="flag-container">
-              <img src="https://flagcdn.com/gb.png" alt="Europe/London flag">
+              <img src="https://flagcdn.com/w320/gb.png" alt="Europe/London flag">
             </div>
             <div class="title-container">Europe/London</div>
           `,
-          flagUrl: "https://flagcdn.com/gb.png"
+          flagUrl: "https://flagcdn.com/w320/gb.png"
         }];
   } catch(e) {
     gridWidgets = [{
       timeZone: "Europe/London",
       title: `
         <div class="flag-container">
-          <img src="https://flagcdn.com/gb.png" alt="Europe/London flag">
+          <img src="https://flagcdn.com/w320/gb.png" alt="Europe/London flag">
         </div>
         <div class="title-container">Europe/London</div>
       `,
-      flagUrl: "https://flagcdn.com/gb.png"
+      flagUrl: "https://flagcdn.com/w320/gb.png"
     }];
   }
   
@@ -272,11 +272,11 @@ function renderGrid() {
           timeZone: "Europe/London",
           title: `
             <div class="flag-container">
-              <img src="https://flagcdn.com/gb.png" alt="Europe/London flag">
+              <img src="https://flagcdn.com/w320/gb.png" alt="Europe/London flag">
             </div>
             <div class="title-container">Europe/London</div>
           `,
-          flagUrl: "https://flagcdn.com/gb.png"
+          flagUrl: "https://flagcdn.com/w320/gb.png"
         });
         saveSettings();
         renderGrid();
