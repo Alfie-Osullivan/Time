@@ -464,6 +464,10 @@ button {
   gap: 0.5rem;
 }
 
+.version-entry {
+  line-height: 1.4;
+}
+
 .country-item {
   padding: 0.6rem;
   cursor: pointer;

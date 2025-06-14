@@ -1,4 +1,16 @@
 [
-  {"version": "1.0.0", "description": "Beta Preview Release"}
-  {"version": "1.0.1", "description": "Bug Release"}
+  {
+    "version": "1.0.0",
+    "name": "Beta Preview",
+    "type": "Feature",
+    "title": "Initial Release",
+    "description": "First public release of the widget with scheduling support."
+  },
+  {
+    "version": "1.0.1",
+    "name": "Bug Fix",
+    "type": "Patch",
+    "title": "Fixes",
+    "description": "Resolved minor timezone detection issues."
+  }
 ]
