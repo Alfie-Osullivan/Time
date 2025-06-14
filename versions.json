@@ -2,15 +2,15 @@
   {
     "version": "1.0.0",
     "name": "Beta Preview",
-    "type": "Feature",
+    "type": "Launch",
     "title": "Initial Release",
-    "description": "First public release of the widget with scheduling support."
+    "description": "The public preview of time.co.gg is now live. Please note there are a few known issues: daylight saving time handling is not yet consistent; the time shown for Jersey, Channel Islands may be incorrect; widget transparency can disappear after changes on certain backgrounds; and the main widget may occasionally fall out of sync."
   },
   {
     "version": "1.0.1",
     "name": "Bug Fix",
     "type": "Patch",
     "title": "Fixes",
-    "description": "Resolved minor timezone detection issues."
+    "description": "Fixed known issues, the time shown for Jersey, Channel Islands may be incorrect; widget transparency can disappear after changes on certain backgrounds; and the main widget may occasionally fall out of sync."
   }
 ]
