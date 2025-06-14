@@ -244,6 +244,10 @@ function renderGrid() {
     globeBtn.addEventListener("click", (e) => {
       e.stopPropagation();
       selectedWidgetIndex = index;
+      activeTab = 'countries';
+      updateTabStyles();
+      countrySearchInput.value = '';
+      filterList();
       countryModal.style.display = "flex";
     });
     
@@ -389,9 +393,49 @@ const countrySearchInput = document.getElementById('countrySearch');
 const clearSearchBtn = document.getElementById('clearSearch');
 const countryListDiv = document.getElementById('countryList');
 const closeModalSpan = document.getElementById('closeModal');
+const countriesTab = document.getElementById('countriesTab');
+const zonesTab = document.getElementById('zonesTab');
+
+let activeTab = 'countries';
+let timeZones = [];
+
+function updateTabStyles() {
+  countriesTab.classList.toggle('active', activeTab === 'countries');
+  zonesTab.classList.toggle('active', activeTab === 'zones');
+}
+
+function filterList() {
+  const query = countrySearchInput.value.toLowerCase();
+  if (activeTab === 'countries') {
+    const filtered = countriesData.filter(c =>
+      c.name.common.toLowerCase().includes(query) ||
+      (c.timezones && c.timezones.some(tz => tz.toLowerCase().includes(query)))
+    );
+    renderCountryList(filtered);
+  } else {
+    const filtered = timeZones.filter(tz => tz.toLowerCase().includes(query));
+    renderTimeZoneList(filtered);
+  }
+}
+
+countriesTab.addEventListener('click', () => {
+  activeTab = 'countries';
+  updateTabStyles();
+  filterList();
+});
+
+zonesTab.addEventListener('click', () => {
+  activeTab = 'zones';
+  updateTabStyles();
+  filterList();
+});
 
 document.getElementById('changeMainTimeZone').addEventListener('click', () => {
   selectedWidgetIndex = -1;
+  activeTab = 'countries';
+  updateTabStyles();
+  countrySearchInput.value = '';
+  filterList();
   countryModal.style.display = "flex";
 });
 
@@ -401,7 +445,7 @@ closeModalSpan.addEventListener('click', () => {
 
 clearSearchBtn.addEventListener('click', () => {
   countrySearchInput.value = '';
-  renderCountryList(countriesData);
+  filterList();
   countrySearchInput.focus();
 });
 window.addEventListener('click', (event) => {
@@ -425,6 +469,8 @@ Promise.all([
 ]).then(([zoneMap, data]) => {
   ianaZoneMap = zoneMap;
   countriesData = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+  timeZones = [...new Set(countriesData.flatMap(c => c.timezones || []))]
+    .sort((a, b) => a.localeCompare(b));
   renderCountryList(countriesData);
 }).catch(err => console.error('Error fetching countries:', err));
 
@@ -469,18 +515,41 @@ function renderCountryList(countries) {
       saveSettings();
       countryModal.style.display = "none";
       countrySearchInput.value = "";
-      renderCountryList(countriesData);
+      filterList();
       renderGrid();
     });
     countryListDiv.appendChild(countryItem);
   });
 }
 
-countrySearchInput.addEventListener('input', () => {
-  const query = countrySearchInput.value.toLowerCase();
-  const filtered = countriesData.filter(country => country.name.common.toLowerCase().includes(query));
-  renderCountryList(filtered);
-});
+function renderTimeZoneList(zones) {
+  countryListDiv.innerHTML = '';
+  zones.forEach(zone => {
+    const tzItem = document.createElement('div');
+    tzItem.className = 'country-item';
+    tzItem.textContent = zone;
+    tzItem.addEventListener('click', () => {
+      if (selectedWidgetIndex === -1) {
+        mainWidget.timeZone = zone;
+        mainWidget.name = '';
+        mainWidget.flagUrl = '';
+        updateMainWidgetDisplay();
+      } else if (selectedWidgetIndex !== null) {
+        gridWidgets[selectedWidgetIndex].timeZone = zone;
+        gridWidgets[selectedWidgetIndex].title = zone;
+        gridWidgets[selectedWidgetIndex].flagUrl = '';
+      }
+      saveSettings();
+      countryModal.style.display = 'none';
+      countrySearchInput.value = '';
+      filterList();
+      renderGrid();
+    });
+    countryListDiv.appendChild(tzItem);
+  });
+}
+
+countrySearchInput.addEventListener('input', filterList);
 
 // ---------- Scheduling Mode Functionality ----------
 const scheduleButton = document.getElementById("scheduleButton");
