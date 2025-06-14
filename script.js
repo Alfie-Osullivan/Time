@@ -322,17 +322,30 @@ versionLink.addEventListener("click", (e) => {
     .then(data => {
       versionList.innerHTML = "";
       data.forEach(entry => {
-        const div = document.createElement("div");
+        const container = document.createElement("div");
+        container.className = "version-entry";
+
         if (typeof entry === "string") {
-          div.textContent = entry;
+          container.textContent = entry;
         } else {
-          const parts = [];
-          if (entry.version) parts.push(entry.version);
-          if (entry.date) parts.push(entry.date);
-          if (entry.description) parts.push(entry.description);
-          div.textContent = parts.join(" - ");
+          const header = document.createElement("strong");
+          const headerParts = [
+            entry.version ? `Version ${entry.version}` : null,
+            entry.name,
+            entry.type,
+            entry.title
+          ].filter(Boolean);
+          header.textContent = headerParts.join(" | ");
+          container.appendChild(header);
+
+          if (entry.description) {
+            const desc = document.createElement("div");
+            desc.textContent = entry.description;
+            container.appendChild(desc);
+          }
         }
-        versionList.appendChild(div);
+
+        versionList.appendChild(container);
       });
       versionModal.style.display = "flex";
     })
