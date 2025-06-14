@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+  <a id="versionLink" href="#">See what's new</a>
   <!-- Top Right Controls (No hour toggle here) -->
   <div id="topControls">
     <button id="scheduleButton" class="schedule-button">Schedule</button>
@@ -80,6 +81,15 @@
           Toggle Hours: <span id="hoursToggleText">24h</span>
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- Version Modal -->
+  <div id="versionModal" class="modal">
+    <div class="modal-content">
+      <span id="closeVersion" class="close">&times;</span>
+      <h2>Version History</h2>
+      <div id="versionList"></div>
     </div>
   </div>
   
