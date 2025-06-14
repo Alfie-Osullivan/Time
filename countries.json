@@ -1,0 +1,2990 @@
+[
+  {
+    "cca2": "AD",
+    "name": {
+      "common": "Andorra"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ad.png"
+    },
+    "timezones": [
+      "Europe/Andorra"
+    ]
+  },
+  {
+    "cca2": "AE",
+    "name": {
+      "common": "United Arab Emirates"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ae.png"
+    },
+    "timezones": [
+      "Asia/Dubai"
+    ]
+  },
+  {
+    "cca2": "AF",
+    "name": {
+      "common": "Afghanistan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/af.png"
+    },
+    "timezones": [
+      "Asia/Kabul"
+    ]
+  },
+  {
+    "cca2": "AG",
+    "name": {
+      "common": "Antigua & Barbuda"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ag.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "AI",
+    "name": {
+      "common": "Anguilla"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ai.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "AL",
+    "name": {
+      "common": "Albania"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/al.png"
+    },
+    "timezones": [
+      "Europe/Tirane"
+    ]
+  },
+  {
+    "cca2": "AM",
+    "name": {
+      "common": "Armenia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/am.png"
+    },
+    "timezones": [
+      "Asia/Yerevan"
+    ]
+  },
+  {
+    "cca2": "AO",
+    "name": {
+      "common": "Angola"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ao.png"
+    },
+    "timezones": [
+      "Africa/Lagos"
+    ]
+  },
+  {
+    "cca2": "AQ",
+    "name": {
+      "common": "Antarctica"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/aq.png"
+    },
+    "timezones": [
+      "Antarctica/Casey"
+    ]
+  },
+  {
+    "cca2": "AR",
+    "name": {
+      "common": "Argentina"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ar.png"
+    },
+    "timezones": [
+      "America/Argentina/Buenos_Aires"
+    ]
+  },
+  {
+    "cca2": "AS",
+    "name": {
+      "common": "Samoa (American)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/as.png"
+    },
+    "timezones": [
+      "Pacific/Pago_Pago"
+    ]
+  },
+  {
+    "cca2": "AT",
+    "name": {
+      "common": "Austria"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/at.png"
+    },
+    "timezones": [
+      "Europe/Vienna"
+    ]
+  },
+  {
+    "cca2": "AU",
+    "name": {
+      "common": "Australia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/au.png"
+    },
+    "timezones": [
+      "Australia/Lord_Howe"
+    ]
+  },
+  {
+    "cca2": "AW",
+    "name": {
+      "common": "Aruba"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/aw.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "AX",
+    "name": {
+      "common": "Åland Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ax.png"
+    },
+    "timezones": [
+      "Europe/Helsinki"
+    ]
+  },
+  {
+    "cca2": "AZ",
+    "name": {
+      "common": "Azerbaijan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/az.png"
+    },
+    "timezones": [
+      "Asia/Baku"
+    ]
+  },
+  {
+    "cca2": "BA",
+    "name": {
+      "common": "Bosnia & Herzegovina"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ba.png"
+    },
+    "timezones": [
+      "Europe/Belgrade"
+    ]
+  },
+  {
+    "cca2": "BB",
+    "name": {
+      "common": "Barbados"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bb.png"
+    },
+    "timezones": [
+      "America/Barbados"
+    ]
+  },
+  {
+    "cca2": "BD",
+    "name": {
+      "common": "Bangladesh"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bd.png"
+    },
+    "timezones": [
+      "Asia/Dhaka"
+    ]
+  },
+  {
+    "cca2": "BE",
+    "name": {
+      "common": "Belgium"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/be.png"
+    },
+    "timezones": [
+      "Europe/Brussels"
+    ]
+  },
+  {
+    "cca2": "BF",
+    "name": {
+      "common": "Burkina Faso"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bf.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "BG",
+    "name": {
+      "common": "Bulgaria"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bg.png"
+    },
+    "timezones": [
+      "Europe/Sofia"
+    ]
+  },
+  {
+    "cca2": "BH",
+    "name": {
+      "common": "Bahrain"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bh.png"
+    },
+    "timezones": [
+      "Asia/Qatar"
+    ]
+  },
+  {
+    "cca2": "BI",
+    "name": {
+      "common": "Burundi"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bi.png"
+    },
+    "timezones": [
+      "Africa/Maputo"
+    ]
+  },
+  {
+    "cca2": "BJ",
+    "name": {
+      "common": "Benin"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bj.png"
+    },
+    "timezones": [
+      "Africa/Lagos"
+    ]
+  },
+  {
+    "cca2": "BL",
+    "name": {
+      "common": "St Barthelemy"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bl.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "BM",
+    "name": {
+      "common": "Bermuda"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bm.png"
+    },
+    "timezones": [
+      "Atlantic/Bermuda"
+    ]
+  },
+  {
+    "cca2": "BN",
+    "name": {
+      "common": "Brunei"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bn.png"
+    },
+    "timezones": [
+      "Asia/Kuching"
+    ]
+  },
+  {
+    "cca2": "BO",
+    "name": {
+      "common": "Bolivia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bo.png"
+    },
+    "timezones": [
+      "America/La_Paz"
+    ]
+  },
+  {
+    "cca2": "BQ",
+    "name": {
+      "common": "Caribbean NL"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bq.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "BR",
+    "name": {
+      "common": "Brazil"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/br.png"
+    },
+    "timezones": [
+      "America/Noronha"
+    ]
+  },
+  {
+    "cca2": "BS",
+    "name": {
+      "common": "Bahamas"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bs.png"
+    },
+    "timezones": [
+      "America/Toronto"
+    ]
+  },
+  {
+    "cca2": "BT",
+    "name": {
+      "common": "Bhutan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bt.png"
+    },
+    "timezones": [
+      "Asia/Thimphu"
+    ]
+  },
+  {
+    "cca2": "BV",
+    "name": {
+      "common": "Bouvet Island"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bv.png"
+    },
+    "timezones": [
+      "Etc/UTC"
+    ]
+  },
+  {
+    "cca2": "BW",
+    "name": {
+      "common": "Botswana"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bw.png"
+    },
+    "timezones": [
+      "Africa/Maputo"
+    ]
+  },
+  {
+    "cca2": "BY",
+    "name": {
+      "common": "Belarus"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/by.png"
+    },
+    "timezones": [
+      "Europe/Minsk"
+    ]
+  },
+  {
+    "cca2": "BZ",
+    "name": {
+      "common": "Belize"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/bz.png"
+    },
+    "timezones": [
+      "America/Belize"
+    ]
+  },
+  {
+    "cca2": "CA",
+    "name": {
+      "common": "Canada"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ca.png"
+    },
+    "timezones": [
+      "America/St_Johns"
+    ]
+  },
+  {
+    "cca2": "CC",
+    "name": {
+      "common": "Cocos (Keeling) Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cc.png"
+    },
+    "timezones": [
+      "Asia/Yangon"
+    ]
+  },
+  {
+    "cca2": "CD",
+    "name": {
+      "common": "Congo (Dem. Rep.)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cd.png"
+    },
+    "timezones": [
+      "Africa/Maputo"
+    ]
+  },
+  {
+    "cca2": "CF",
+    "name": {
+      "common": "Central African Rep."
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cf.png"
+    },
+    "timezones": [
+      "Africa/Lagos"
+    ]
+  },
+  {
+    "cca2": "CG",
+    "name": {
+      "common": "Congo (Rep.)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cg.png"
+    },
+    "timezones": [
+      "Africa/Lagos"
+    ]
+  },
+  {
+    "cca2": "CH",
+    "name": {
+      "common": "Switzerland"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ch.png"
+    },
+    "timezones": [
+      "Europe/Zurich"
+    ]
+  },
+  {
+    "cca2": "CI",
+    "name": {
+      "common": "Côte d'Ivoire"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ci.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "CK",
+    "name": {
+      "common": "Cook Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ck.png"
+    },
+    "timezones": [
+      "Pacific/Rarotonga"
+    ]
+  },
+  {
+    "cca2": "CL",
+    "name": {
+      "common": "Chile"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cl.png"
+    },
+    "timezones": [
+      "America/Santiago"
+    ]
+  },
+  {
+    "cca2": "CM",
+    "name": {
+      "common": "Cameroon"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cm.png"
+    },
+    "timezones": [
+      "Africa/Lagos"
+    ]
+  },
+  {
+    "cca2": "CN",
+    "name": {
+      "common": "China"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cn.png"
+    },
+    "timezones": [
+      "Asia/Shanghai"
+    ]
+  },
+  {
+    "cca2": "CO",
+    "name": {
+      "common": "Colombia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/co.png"
+    },
+    "timezones": [
+      "America/Bogota"
+    ]
+  },
+  {
+    "cca2": "CR",
+    "name": {
+      "common": "Costa Rica"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cr.png"
+    },
+    "timezones": [
+      "America/Costa_Rica"
+    ]
+  },
+  {
+    "cca2": "CU",
+    "name": {
+      "common": "Cuba"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cu.png"
+    },
+    "timezones": [
+      "America/Havana"
+    ]
+  },
+  {
+    "cca2": "CV",
+    "name": {
+      "common": "Cape Verde"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cv.png"
+    },
+    "timezones": [
+      "Atlantic/Cape_Verde"
+    ]
+  },
+  {
+    "cca2": "CW",
+    "name": {
+      "common": "Curaçao"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cw.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "CX",
+    "name": {
+      "common": "Christmas Island"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cx.png"
+    },
+    "timezones": [
+      "Asia/Bangkok"
+    ]
+  },
+  {
+    "cca2": "CY",
+    "name": {
+      "common": "Cyprus"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cy.png"
+    },
+    "timezones": [
+      "Asia/Nicosia"
+    ]
+  },
+  {
+    "cca2": "CZ",
+    "name": {
+      "common": "Czech Republic"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/cz.png"
+    },
+    "timezones": [
+      "Europe/Prague"
+    ]
+  },
+  {
+    "cca2": "DE",
+    "name": {
+      "common": "Germany"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/de.png"
+    },
+    "timezones": [
+      "Europe/Zurich"
+    ]
+  },
+  {
+    "cca2": "DJ",
+    "name": {
+      "common": "Djibouti"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/dj.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "DK",
+    "name": {
+      "common": "Denmark"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/dk.png"
+    },
+    "timezones": [
+      "Europe/Berlin"
+    ]
+  },
+  {
+    "cca2": "DM",
+    "name": {
+      "common": "Dominica"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/dm.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "DO",
+    "name": {
+      "common": "Dominican Republic"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/do.png"
+    },
+    "timezones": [
+      "America/Santo_Domingo"
+    ]
+  },
+  {
+    "cca2": "DZ",
+    "name": {
+      "common": "Algeria"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/dz.png"
+    },
+    "timezones": [
+      "Africa/Algiers"
+    ]
+  },
+  {
+    "cca2": "EC",
+    "name": {
+      "common": "Ecuador"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ec.png"
+    },
+    "timezones": [
+      "America/Guayaquil"
+    ]
+  },
+  {
+    "cca2": "EE",
+    "name": {
+      "common": "Estonia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ee.png"
+    },
+    "timezones": [
+      "Europe/Tallinn"
+    ]
+  },
+  {
+    "cca2": "EG",
+    "name": {
+      "common": "Egypt"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/eg.png"
+    },
+    "timezones": [
+      "Africa/Cairo"
+    ]
+  },
+  {
+    "cca2": "EH",
+    "name": {
+      "common": "Western Sahara"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/eh.png"
+    },
+    "timezones": [
+      "Africa/El_Aaiun"
+    ]
+  },
+  {
+    "cca2": "ER",
+    "name": {
+      "common": "Eritrea"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/er.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "ES",
+    "name": {
+      "common": "Spain"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/es.png"
+    },
+    "timezones": [
+      "Europe/Madrid"
+    ]
+  },
+  {
+    "cca2": "ET",
+    "name": {
+      "common": "Ethiopia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/et.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "FI",
+    "name": {
+      "common": "Finland"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/fi.png"
+    },
+    "timezones": [
+      "Europe/Helsinki"
+    ]
+  },
+  {
+    "cca2": "FJ",
+    "name": {
+      "common": "Fiji"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/fj.png"
+    },
+    "timezones": [
+      "Pacific/Fiji"
+    ]
+  },
+  {
+    "cca2": "FK",
+    "name": {
+      "common": "Falkland Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/fk.png"
+    },
+    "timezones": [
+      "Atlantic/Stanley"
+    ]
+  },
+  {
+    "cca2": "FM",
+    "name": {
+      "common": "Micronesia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/fm.png"
+    },
+    "timezones": [
+      "Pacific/Kosrae"
+    ]
+  },
+  {
+    "cca2": "FO",
+    "name": {
+      "common": "Faroe Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/fo.png"
+    },
+    "timezones": [
+      "Atlantic/Faroe"
+    ]
+  },
+  {
+    "cca2": "FR",
+    "name": {
+      "common": "France"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/fr.png"
+    },
+    "timezones": [
+      "Europe/Paris"
+    ]
+  },
+  {
+    "cca2": "GA",
+    "name": {
+      "common": "Gabon"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ga.png"
+    },
+    "timezones": [
+      "Africa/Lagos"
+    ]
+  },
+  {
+    "cca2": "GB",
+    "name": {
+      "common": "Britain (UK)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gb.png"
+    },
+    "timezones": [
+      "Europe/London"
+    ]
+  },
+  {
+    "cca2": "GD",
+    "name": {
+      "common": "Grenada"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gd.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "GE",
+    "name": {
+      "common": "Georgia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ge.png"
+    },
+    "timezones": [
+      "Asia/Tbilisi"
+    ]
+  },
+  {
+    "cca2": "GF",
+    "name": {
+      "common": "French Guiana"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gf.png"
+    },
+    "timezones": [
+      "America/Cayenne"
+    ]
+  },
+  {
+    "cca2": "GG",
+    "name": {
+      "common": "Guernsey"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gg.png"
+    },
+    "timezones": [
+      "Europe/London"
+    ]
+  },
+  {
+    "cca2": "GH",
+    "name": {
+      "common": "Ghana"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gh.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "GI",
+    "name": {
+      "common": "Gibraltar"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gi.png"
+    },
+    "timezones": [
+      "Europe/Gibraltar"
+    ]
+  },
+  {
+    "cca2": "GL",
+    "name": {
+      "common": "Greenland"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gl.png"
+    },
+    "timezones": [
+      "America/Nuuk"
+    ]
+  },
+  {
+    "cca2": "GM",
+    "name": {
+      "common": "Gambia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gm.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "GN",
+    "name": {
+      "common": "Guinea"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gn.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "GP",
+    "name": {
+      "common": "Guadeloupe"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gp.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "GQ",
+    "name": {
+      "common": "Equatorial Guinea"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gq.png"
+    },
+    "timezones": [
+      "Africa/Lagos"
+    ]
+  },
+  {
+    "cca2": "GR",
+    "name": {
+      "common": "Greece"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gr.png"
+    },
+    "timezones": [
+      "Europe/Athens"
+    ]
+  },
+  {
+    "cca2": "GS",
+    "name": {
+      "common": "South Georgia & the South Sandwich Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gs.png"
+    },
+    "timezones": [
+      "Atlantic/South_Georgia"
+    ]
+  },
+  {
+    "cca2": "GT",
+    "name": {
+      "common": "Guatemala"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gt.png"
+    },
+    "timezones": [
+      "America/Guatemala"
+    ]
+  },
+  {
+    "cca2": "GU",
+    "name": {
+      "common": "Guam"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gu.png"
+    },
+    "timezones": [
+      "Pacific/Guam"
+    ]
+  },
+  {
+    "cca2": "GW",
+    "name": {
+      "common": "Guinea-Bissau"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gw.png"
+    },
+    "timezones": [
+      "Africa/Bissau"
+    ]
+  },
+  {
+    "cca2": "GY",
+    "name": {
+      "common": "Guyana"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/gy.png"
+    },
+    "timezones": [
+      "America/Guyana"
+    ]
+  },
+  {
+    "cca2": "HK",
+    "name": {
+      "common": "Hong Kong"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/hk.png"
+    },
+    "timezones": [
+      "Asia/Hong_Kong"
+    ]
+  },
+  {
+    "cca2": "HM",
+    "name": {
+      "common": "Heard Island & McDonald Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/hm.png"
+    },
+    "timezones": [
+      "Etc/UTC"
+    ]
+  },
+  {
+    "cca2": "HN",
+    "name": {
+      "common": "Honduras"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/hn.png"
+    },
+    "timezones": [
+      "America/Tegucigalpa"
+    ]
+  },
+  {
+    "cca2": "HR",
+    "name": {
+      "common": "Croatia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/hr.png"
+    },
+    "timezones": [
+      "Europe/Belgrade"
+    ]
+  },
+  {
+    "cca2": "HT",
+    "name": {
+      "common": "Haiti"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ht.png"
+    },
+    "timezones": [
+      "America/Port-au-Prince"
+    ]
+  },
+  {
+    "cca2": "HU",
+    "name": {
+      "common": "Hungary"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/hu.png"
+    },
+    "timezones": [
+      "Europe/Budapest"
+    ]
+  },
+  {
+    "cca2": "ID",
+    "name": {
+      "common": "Indonesia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/id.png"
+    },
+    "timezones": [
+      "Asia/Jakarta"
+    ]
+  },
+  {
+    "cca2": "IE",
+    "name": {
+      "common": "Ireland"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ie.png"
+    },
+    "timezones": [
+      "Europe/Dublin"
+    ]
+  },
+  {
+    "cca2": "IL",
+    "name": {
+      "common": "Israel"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/il.png"
+    },
+    "timezones": [
+      "Asia/Jerusalem"
+    ]
+  },
+  {
+    "cca2": "IM",
+    "name": {
+      "common": "Isle of Man"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/im.png"
+    },
+    "timezones": [
+      "Europe/London"
+    ]
+  },
+  {
+    "cca2": "IN",
+    "name": {
+      "common": "India"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/in.png"
+    },
+    "timezones": [
+      "Asia/Kolkata"
+    ]
+  },
+  {
+    "cca2": "IO",
+    "name": {
+      "common": "British Indian Ocean Territory"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/io.png"
+    },
+    "timezones": [
+      "Indian/Chagos"
+    ]
+  },
+  {
+    "cca2": "IQ",
+    "name": {
+      "common": "Iraq"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/iq.png"
+    },
+    "timezones": [
+      "Asia/Baghdad"
+    ]
+  },
+  {
+    "cca2": "IR",
+    "name": {
+      "common": "Iran"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ir.png"
+    },
+    "timezones": [
+      "Asia/Tehran"
+    ]
+  },
+  {
+    "cca2": "IS",
+    "name": {
+      "common": "Iceland"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/is.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "IT",
+    "name": {
+      "common": "Italy"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/it.png"
+    },
+    "timezones": [
+      "Europe/Rome"
+    ]
+  },
+  {
+    "cca2": "JE",
+    "name": {
+      "common": "Jersey"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/je.png"
+    },
+    "timezones": [
+      "Europe/London"
+    ]
+  },
+  {
+    "cca2": "JM",
+    "name": {
+      "common": "Jamaica"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/jm.png"
+    },
+    "timezones": [
+      "America/Jamaica"
+    ]
+  },
+  {
+    "cca2": "JO",
+    "name": {
+      "common": "Jordan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/jo.png"
+    },
+    "timezones": [
+      "Asia/Amman"
+    ]
+  },
+  {
+    "cca2": "JP",
+    "name": {
+      "common": "Japan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/jp.png"
+    },
+    "timezones": [
+      "Asia/Tokyo"
+    ]
+  },
+  {
+    "cca2": "KE",
+    "name": {
+      "common": "Kenya"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ke.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "KG",
+    "name": {
+      "common": "Kyrgyzstan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/kg.png"
+    },
+    "timezones": [
+      "Asia/Bishkek"
+    ]
+  },
+  {
+    "cca2": "KH",
+    "name": {
+      "common": "Cambodia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/kh.png"
+    },
+    "timezones": [
+      "Asia/Bangkok"
+    ]
+  },
+  {
+    "cca2": "KI",
+    "name": {
+      "common": "Kiribati"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ki.png"
+    },
+    "timezones": [
+      "Pacific/Tarawa"
+    ]
+  },
+  {
+    "cca2": "KM",
+    "name": {
+      "common": "Comoros"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/km.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "KN",
+    "name": {
+      "common": "St Kitts & Nevis"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/kn.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "KP",
+    "name": {
+      "common": "Korea (North)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/kp.png"
+    },
+    "timezones": [
+      "Asia/Pyongyang"
+    ]
+  },
+  {
+    "cca2": "KR",
+    "name": {
+      "common": "Korea (South)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/kr.png"
+    },
+    "timezones": [
+      "Asia/Seoul"
+    ]
+  },
+  {
+    "cca2": "KW",
+    "name": {
+      "common": "Kuwait"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/kw.png"
+    },
+    "timezones": [
+      "Asia/Riyadh"
+    ]
+  },
+  {
+    "cca2": "KY",
+    "name": {
+      "common": "Cayman Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ky.png"
+    },
+    "timezones": [
+      "America/Panama"
+    ]
+  },
+  {
+    "cca2": "KZ",
+    "name": {
+      "common": "Kazakhstan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/kz.png"
+    },
+    "timezones": [
+      "Asia/Almaty"
+    ]
+  },
+  {
+    "cca2": "LA",
+    "name": {
+      "common": "Laos"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/la.png"
+    },
+    "timezones": [
+      "Asia/Bangkok"
+    ]
+  },
+  {
+    "cca2": "LB",
+    "name": {
+      "common": "Lebanon"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/lb.png"
+    },
+    "timezones": [
+      "Asia/Beirut"
+    ]
+  },
+  {
+    "cca2": "LC",
+    "name": {
+      "common": "St Lucia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/lc.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "LI",
+    "name": {
+      "common": "Liechtenstein"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/li.png"
+    },
+    "timezones": [
+      "Europe/Zurich"
+    ]
+  },
+  {
+    "cca2": "LK",
+    "name": {
+      "common": "Sri Lanka"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/lk.png"
+    },
+    "timezones": [
+      "Asia/Colombo"
+    ]
+  },
+  {
+    "cca2": "LR",
+    "name": {
+      "common": "Liberia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/lr.png"
+    },
+    "timezones": [
+      "Africa/Monrovia"
+    ]
+  },
+  {
+    "cca2": "LS",
+    "name": {
+      "common": "Lesotho"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ls.png"
+    },
+    "timezones": [
+      "Africa/Johannesburg"
+    ]
+  },
+  {
+    "cca2": "LT",
+    "name": {
+      "common": "Lithuania"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/lt.png"
+    },
+    "timezones": [
+      "Europe/Vilnius"
+    ]
+  },
+  {
+    "cca2": "LU",
+    "name": {
+      "common": "Luxembourg"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/lu.png"
+    },
+    "timezones": [
+      "Europe/Brussels"
+    ]
+  },
+  {
+    "cca2": "LV",
+    "name": {
+      "common": "Latvia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/lv.png"
+    },
+    "timezones": [
+      "Europe/Riga"
+    ]
+  },
+  {
+    "cca2": "LY",
+    "name": {
+      "common": "Libya"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ly.png"
+    },
+    "timezones": [
+      "Africa/Tripoli"
+    ]
+  },
+  {
+    "cca2": "MA",
+    "name": {
+      "common": "Morocco"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ma.png"
+    },
+    "timezones": [
+      "Africa/Casablanca"
+    ]
+  },
+  {
+    "cca2": "MC",
+    "name": {
+      "common": "Monaco"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mc.png"
+    },
+    "timezones": [
+      "Europe/Paris"
+    ]
+  },
+  {
+    "cca2": "MD",
+    "name": {
+      "common": "Moldova"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/md.png"
+    },
+    "timezones": [
+      "Europe/Chisinau"
+    ]
+  },
+  {
+    "cca2": "ME",
+    "name": {
+      "common": "Montenegro"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/me.png"
+    },
+    "timezones": [
+      "Europe/Belgrade"
+    ]
+  },
+  {
+    "cca2": "MF",
+    "name": {
+      "common": "St Martin (French)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mf.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "MG",
+    "name": {
+      "common": "Madagascar"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mg.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "MH",
+    "name": {
+      "common": "Marshall Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mh.png"
+    },
+    "timezones": [
+      "Pacific/Tarawa"
+    ]
+  },
+  {
+    "cca2": "MK",
+    "name": {
+      "common": "North Macedonia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mk.png"
+    },
+    "timezones": [
+      "Europe/Belgrade"
+    ]
+  },
+  {
+    "cca2": "ML",
+    "name": {
+      "common": "Mali"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ml.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "MM",
+    "name": {
+      "common": "Myanmar (Burma)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mm.png"
+    },
+    "timezones": [
+      "Asia/Yangon"
+    ]
+  },
+  {
+    "cca2": "MN",
+    "name": {
+      "common": "Mongolia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mn.png"
+    },
+    "timezones": [
+      "Asia/Ulaanbaatar"
+    ]
+  },
+  {
+    "cca2": "MO",
+    "name": {
+      "common": "Macau"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mo.png"
+    },
+    "timezones": [
+      "Asia/Macau"
+    ]
+  },
+  {
+    "cca2": "MP",
+    "name": {
+      "common": "Northern Mariana Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mp.png"
+    },
+    "timezones": [
+      "Pacific/Guam"
+    ]
+  },
+  {
+    "cca2": "MQ",
+    "name": {
+      "common": "Martinique"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mq.png"
+    },
+    "timezones": [
+      "America/Martinique"
+    ]
+  },
+  {
+    "cca2": "MR",
+    "name": {
+      "common": "Mauritania"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mr.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "MS",
+    "name": {
+      "common": "Montserrat"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ms.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "MT",
+    "name": {
+      "common": "Malta"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mt.png"
+    },
+    "timezones": [
+      "Europe/Malta"
+    ]
+  },
+  {
+    "cca2": "MU",
+    "name": {
+      "common": "Mauritius"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mu.png"
+    },
+    "timezones": [
+      "Indian/Mauritius"
+    ]
+  },
+  {
+    "cca2": "MV",
+    "name": {
+      "common": "Maldives"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mv.png"
+    },
+    "timezones": [
+      "Indian/Maldives"
+    ]
+  },
+  {
+    "cca2": "MW",
+    "name": {
+      "common": "Malawi"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mw.png"
+    },
+    "timezones": [
+      "Africa/Maputo"
+    ]
+  },
+  {
+    "cca2": "MX",
+    "name": {
+      "common": "Mexico"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mx.png"
+    },
+    "timezones": [
+      "America/Mexico_City"
+    ]
+  },
+  {
+    "cca2": "MY",
+    "name": {
+      "common": "Malaysia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/my.png"
+    },
+    "timezones": [
+      "Asia/Kuching"
+    ]
+  },
+  {
+    "cca2": "MZ",
+    "name": {
+      "common": "Mozambique"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/mz.png"
+    },
+    "timezones": [
+      "Africa/Maputo"
+    ]
+  },
+  {
+    "cca2": "NA",
+    "name": {
+      "common": "Namibia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/na.png"
+    },
+    "timezones": [
+      "Africa/Windhoek"
+    ]
+  },
+  {
+    "cca2": "NC",
+    "name": {
+      "common": "New Caledonia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/nc.png"
+    },
+    "timezones": [
+      "Pacific/Noumea"
+    ]
+  },
+  {
+    "cca2": "NE",
+    "name": {
+      "common": "Niger"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ne.png"
+    },
+    "timezones": [
+      "Africa/Lagos"
+    ]
+  },
+  {
+    "cca2": "NF",
+    "name": {
+      "common": "Norfolk Island"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/nf.png"
+    },
+    "timezones": [
+      "Pacific/Norfolk"
+    ]
+  },
+  {
+    "cca2": "NG",
+    "name": {
+      "common": "Nigeria"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ng.png"
+    },
+    "timezones": [
+      "Africa/Lagos"
+    ]
+  },
+  {
+    "cca2": "NI",
+    "name": {
+      "common": "Nicaragua"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ni.png"
+    },
+    "timezones": [
+      "America/Managua"
+    ]
+  },
+  {
+    "cca2": "NL",
+    "name": {
+      "common": "Netherlands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/nl.png"
+    },
+    "timezones": [
+      "Europe/Brussels"
+    ]
+  },
+  {
+    "cca2": "NO",
+    "name": {
+      "common": "Norway"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/no.png"
+    },
+    "timezones": [
+      "Europe/Berlin"
+    ]
+  },
+  {
+    "cca2": "NP",
+    "name": {
+      "common": "Nepal"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/np.png"
+    },
+    "timezones": [
+      "Asia/Kathmandu"
+    ]
+  },
+  {
+    "cca2": "NR",
+    "name": {
+      "common": "Nauru"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/nr.png"
+    },
+    "timezones": [
+      "Pacific/Nauru"
+    ]
+  },
+  {
+    "cca2": "NU",
+    "name": {
+      "common": "Niue"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/nu.png"
+    },
+    "timezones": [
+      "Pacific/Niue"
+    ]
+  },
+  {
+    "cca2": "NZ",
+    "name": {
+      "common": "New Zealand"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/nz.png"
+    },
+    "timezones": [
+      "Pacific/Auckland"
+    ]
+  },
+  {
+    "cca2": "OM",
+    "name": {
+      "common": "Oman"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/om.png"
+    },
+    "timezones": [
+      "Asia/Dubai"
+    ]
+  },
+  {
+    "cca2": "PA",
+    "name": {
+      "common": "Panama"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pa.png"
+    },
+    "timezones": [
+      "America/Panama"
+    ]
+  },
+  {
+    "cca2": "PE",
+    "name": {
+      "common": "Peru"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pe.png"
+    },
+    "timezones": [
+      "America/Lima"
+    ]
+  },
+  {
+    "cca2": "PF",
+    "name": {
+      "common": "French Polynesia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pf.png"
+    },
+    "timezones": [
+      "Pacific/Tahiti"
+    ]
+  },
+  {
+    "cca2": "PG",
+    "name": {
+      "common": "Papua New Guinea"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pg.png"
+    },
+    "timezones": [
+      "Pacific/Port_Moresby"
+    ]
+  },
+  {
+    "cca2": "PH",
+    "name": {
+      "common": "Philippines"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ph.png"
+    },
+    "timezones": [
+      "Asia/Manila"
+    ]
+  },
+  {
+    "cca2": "PK",
+    "name": {
+      "common": "Pakistan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pk.png"
+    },
+    "timezones": [
+      "Asia/Karachi"
+    ]
+  },
+  {
+    "cca2": "PL",
+    "name": {
+      "common": "Poland"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pl.png"
+    },
+    "timezones": [
+      "Europe/Warsaw"
+    ]
+  },
+  {
+    "cca2": "PM",
+    "name": {
+      "common": "St Pierre & Miquelon"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pm.png"
+    },
+    "timezones": [
+      "America/Miquelon"
+    ]
+  },
+  {
+    "cca2": "PN",
+    "name": {
+      "common": "Pitcairn"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pn.png"
+    },
+    "timezones": [
+      "Pacific/Pitcairn"
+    ]
+  },
+  {
+    "cca2": "PR",
+    "name": {
+      "common": "Puerto Rico"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pr.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "PS",
+    "name": {
+      "common": "Palestine"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ps.png"
+    },
+    "timezones": [
+      "Asia/Gaza"
+    ]
+  },
+  {
+    "cca2": "PT",
+    "name": {
+      "common": "Portugal"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pt.png"
+    },
+    "timezones": [
+      "Europe/Lisbon"
+    ]
+  },
+  {
+    "cca2": "PW",
+    "name": {
+      "common": "Palau"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/pw.png"
+    },
+    "timezones": [
+      "Pacific/Palau"
+    ]
+  },
+  {
+    "cca2": "PY",
+    "name": {
+      "common": "Paraguay"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/py.png"
+    },
+    "timezones": [
+      "America/Asuncion"
+    ]
+  },
+  {
+    "cca2": "QA",
+    "name": {
+      "common": "Qatar"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/qa.png"
+    },
+    "timezones": [
+      "Asia/Qatar"
+    ]
+  },
+  {
+    "cca2": "RE",
+    "name": {
+      "common": "Réunion"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/re.png"
+    },
+    "timezones": [
+      "Asia/Dubai"
+    ]
+  },
+  {
+    "cca2": "RO",
+    "name": {
+      "common": "Romania"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ro.png"
+    },
+    "timezones": [
+      "Europe/Bucharest"
+    ]
+  },
+  {
+    "cca2": "RS",
+    "name": {
+      "common": "Serbia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/rs.png"
+    },
+    "timezones": [
+      "Europe/Belgrade"
+    ]
+  },
+  {
+    "cca2": "RU",
+    "name": {
+      "common": "Russia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ru.png"
+    },
+    "timezones": [
+      "Europe/Kaliningrad"
+    ]
+  },
+  {
+    "cca2": "RW",
+    "name": {
+      "common": "Rwanda"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/rw.png"
+    },
+    "timezones": [
+      "Africa/Maputo"
+    ]
+  },
+  {
+    "cca2": "SA",
+    "name": {
+      "common": "Saudi Arabia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sa.png"
+    },
+    "timezones": [
+      "Asia/Riyadh"
+    ]
+  },
+  {
+    "cca2": "SB",
+    "name": {
+      "common": "Solomon Islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sb.png"
+    },
+    "timezones": [
+      "Pacific/Guadalcanal"
+    ]
+  },
+  {
+    "cca2": "SC",
+    "name": {
+      "common": "Seychelles"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sc.png"
+    },
+    "timezones": [
+      "Asia/Dubai"
+    ]
+  },
+  {
+    "cca2": "SD",
+    "name": {
+      "common": "Sudan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sd.png"
+    },
+    "timezones": [
+      "Africa/Khartoum"
+    ]
+  },
+  {
+    "cca2": "SE",
+    "name": {
+      "common": "Sweden"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/se.png"
+    },
+    "timezones": [
+      "Europe/Berlin"
+    ]
+  },
+  {
+    "cca2": "SG",
+    "name": {
+      "common": "Singapore"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sg.png"
+    },
+    "timezones": [
+      "Asia/Singapore"
+    ]
+  },
+  {
+    "cca2": "SH",
+    "name": {
+      "common": "St Helena"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sh.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "SI",
+    "name": {
+      "common": "Slovenia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/si.png"
+    },
+    "timezones": [
+      "Europe/Belgrade"
+    ]
+  },
+  {
+    "cca2": "SJ",
+    "name": {
+      "common": "Svalbard & Jan Mayen"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sj.png"
+    },
+    "timezones": [
+      "Europe/Berlin"
+    ]
+  },
+  {
+    "cca2": "SK",
+    "name": {
+      "common": "Slovakia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sk.png"
+    },
+    "timezones": [
+      "Europe/Prague"
+    ]
+  },
+  {
+    "cca2": "SL",
+    "name": {
+      "common": "Sierra Leone"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sl.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "SM",
+    "name": {
+      "common": "San Marino"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sm.png"
+    },
+    "timezones": [
+      "Europe/Rome"
+    ]
+  },
+  {
+    "cca2": "SN",
+    "name": {
+      "common": "Senegal"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sn.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "SO",
+    "name": {
+      "common": "Somalia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/so.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "SR",
+    "name": {
+      "common": "Suriname"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sr.png"
+    },
+    "timezones": [
+      "America/Paramaribo"
+    ]
+  },
+  {
+    "cca2": "SS",
+    "name": {
+      "common": "South Sudan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ss.png"
+    },
+    "timezones": [
+      "Africa/Juba"
+    ]
+  },
+  {
+    "cca2": "ST",
+    "name": {
+      "common": "Sao Tome & Principe"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/st.png"
+    },
+    "timezones": [
+      "Africa/Sao_Tome"
+    ]
+  },
+  {
+    "cca2": "SV",
+    "name": {
+      "common": "El Salvador"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sv.png"
+    },
+    "timezones": [
+      "America/El_Salvador"
+    ]
+  },
+  {
+    "cca2": "SX",
+    "name": {
+      "common": "St Maarten (Dutch)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sx.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "SY",
+    "name": {
+      "common": "Syria"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sy.png"
+    },
+    "timezones": [
+      "Asia/Damascus"
+    ]
+  },
+  {
+    "cca2": "SZ",
+    "name": {
+      "common": "Eswatini (Swaziland)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/sz.png"
+    },
+    "timezones": [
+      "Africa/Johannesburg"
+    ]
+  },
+  {
+    "cca2": "TC",
+    "name": {
+      "common": "Turks & Caicos Is"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tc.png"
+    },
+    "timezones": [
+      "America/Grand_Turk"
+    ]
+  },
+  {
+    "cca2": "TD",
+    "name": {
+      "common": "Chad"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/td.png"
+    },
+    "timezones": [
+      "Africa/Ndjamena"
+    ]
+  },
+  {
+    "cca2": "TF",
+    "name": {
+      "common": "French S. Terr."
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tf.png"
+    },
+    "timezones": [
+      "Asia/Dubai"
+    ]
+  },
+  {
+    "cca2": "TG",
+    "name": {
+      "common": "Togo"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tg.png"
+    },
+    "timezones": [
+      "Africa/Abidjan"
+    ]
+  },
+  {
+    "cca2": "TH",
+    "name": {
+      "common": "Thailand"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/th.png"
+    },
+    "timezones": [
+      "Asia/Bangkok"
+    ]
+  },
+  {
+    "cca2": "TJ",
+    "name": {
+      "common": "Tajikistan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tj.png"
+    },
+    "timezones": [
+      "Asia/Dushanbe"
+    ]
+  },
+  {
+    "cca2": "TK",
+    "name": {
+      "common": "Tokelau"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tk.png"
+    },
+    "timezones": [
+      "Pacific/Fakaofo"
+    ]
+  },
+  {
+    "cca2": "TL",
+    "name": {
+      "common": "East Timor"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tl.png"
+    },
+    "timezones": [
+      "Asia/Dili"
+    ]
+  },
+  {
+    "cca2": "TM",
+    "name": {
+      "common": "Turkmenistan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tm.png"
+    },
+    "timezones": [
+      "Asia/Ashgabat"
+    ]
+  },
+  {
+    "cca2": "TN",
+    "name": {
+      "common": "Tunisia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tn.png"
+    },
+    "timezones": [
+      "Africa/Tunis"
+    ]
+  },
+  {
+    "cca2": "TO",
+    "name": {
+      "common": "Tonga"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/to.png"
+    },
+    "timezones": [
+      "Pacific/Tongatapu"
+    ]
+  },
+  {
+    "cca2": "TR",
+    "name": {
+      "common": "Turkey"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tr.png"
+    },
+    "timezones": [
+      "Europe/Istanbul"
+    ]
+  },
+  {
+    "cca2": "TT",
+    "name": {
+      "common": "Trinidad & Tobago"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tt.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "TV",
+    "name": {
+      "common": "Tuvalu"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tv.png"
+    },
+    "timezones": [
+      "Pacific/Tarawa"
+    ]
+  },
+  {
+    "cca2": "TW",
+    "name": {
+      "common": "Taiwan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tw.png"
+    },
+    "timezones": [
+      "Asia/Taipei"
+    ]
+  },
+  {
+    "cca2": "TZ",
+    "name": {
+      "common": "Tanzania"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/tz.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "UA",
+    "name": {
+      "common": "Ukraine"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ua.png"
+    },
+    "timezones": [
+      "Europe/Simferopol"
+    ]
+  },
+  {
+    "cca2": "UG",
+    "name": {
+      "common": "Uganda"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ug.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "UM",
+    "name": {
+      "common": "US minor outlying islands"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/um.png"
+    },
+    "timezones": [
+      "Pacific/Pago_Pago"
+    ]
+  },
+  {
+    "cca2": "US",
+    "name": {
+      "common": "United States"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/us.png"
+    },
+    "timezones": [
+      "America/New_York"
+    ]
+  },
+  {
+    "cca2": "UY",
+    "name": {
+      "common": "Uruguay"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/uy.png"
+    },
+    "timezones": [
+      "America/Montevideo"
+    ]
+  },
+  {
+    "cca2": "UZ",
+    "name": {
+      "common": "Uzbekistan"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/uz.png"
+    },
+    "timezones": [
+      "Asia/Samarkand"
+    ]
+  },
+  {
+    "cca2": "VA",
+    "name": {
+      "common": "Vatican City"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/va.png"
+    },
+    "timezones": [
+      "Europe/Rome"
+    ]
+  },
+  {
+    "cca2": "VC",
+    "name": {
+      "common": "St Vincent"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/vc.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "VE",
+    "name": {
+      "common": "Venezuela"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ve.png"
+    },
+    "timezones": [
+      "America/Caracas"
+    ]
+  },
+  {
+    "cca2": "VG",
+    "name": {
+      "common": "Virgin Islands (UK)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/vg.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "VI",
+    "name": {
+      "common": "Virgin Islands (US)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/vi.png"
+    },
+    "timezones": [
+      "America/Puerto_Rico"
+    ]
+  },
+  {
+    "cca2": "VN",
+    "name": {
+      "common": "Vietnam"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/vn.png"
+    },
+    "timezones": [
+      "Asia/Bangkok"
+    ]
+  },
+  {
+    "cca2": "VU",
+    "name": {
+      "common": "Vanuatu"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/vu.png"
+    },
+    "timezones": [
+      "Pacific/Efate"
+    ]
+  },
+  {
+    "cca2": "WF",
+    "name": {
+      "common": "Wallis & Futuna"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/wf.png"
+    },
+    "timezones": [
+      "Pacific/Tarawa"
+    ]
+  },
+  {
+    "cca2": "WS",
+    "name": {
+      "common": "Samoa (western)"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ws.png"
+    },
+    "timezones": [
+      "Pacific/Apia"
+    ]
+  },
+  {
+    "cca2": "YE",
+    "name": {
+      "common": "Yemen"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/ye.png"
+    },
+    "timezones": [
+      "Asia/Riyadh"
+    ]
+  },
+  {
+    "cca2": "YT",
+    "name": {
+      "common": "Mayotte"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/yt.png"
+    },
+    "timezones": [
+      "Africa/Nairobi"
+    ]
+  },
+  {
+    "cca2": "ZA",
+    "name": {
+      "common": "South Africa"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/za.png"
+    },
+    "timezones": [
+      "Africa/Johannesburg"
+    ]
+  },
+  {
+    "cca2": "ZM",
+    "name": {
+      "common": "Zambia"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/zm.png"
+    },
+    "timezones": [
+      "Africa/Maputo"
+    ]
+  },
+  {
+    "cca2": "ZW",
+    "name": {
+      "common": "Zimbabwe"
+    },
+    "flags": {
+      "png": "https://flagcdn.com/w320/zw.png"
+    },
+    "timezones": [
+      "Africa/Maputo"
+    ]
+  }
+]
