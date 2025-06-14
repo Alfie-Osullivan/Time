@@ -249,11 +249,10 @@ function renderGrid() {
     
     let actionsDiv = document.createElement("div");
     actionsDiv.className = "widget-actions";
-    actionsDiv.style.display = "flex";
-    actionsDiv.style.justifyContent = "space-between";
     
     let globeBtn = document.createElement("button");
     globeBtn.className = "globe-button circle-button";
+    globeBtn.textContent = "🌐";
     globeBtn.addEventListener("click", (e) => {
       e.stopPropagation();
       selectedWidgetIndex = index;
@@ -267,6 +266,7 @@ function renderGrid() {
     // Trash button
     let trashBtn = document.createElement("button");
     trashBtn.className = "trash-button circle-button";
+    trashBtn.textContent = "🗑️";
     trashBtn.addEventListener("click", (e) => {
       e.stopPropagation();
       gridWidgets.splice(index, 1);
