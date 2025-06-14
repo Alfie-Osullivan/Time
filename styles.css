@@ -13,41 +13,6 @@ body {
   background-position: center;
 }
 
-body.theme-bw {
-  background: #ffffff;
-  color: #000;
-}
-
-body.theme-bw .widget {
-  background: #fff;
-  color: #000;
-}
-
-body.theme-system {
-  color: #000;
-}
-
-body.theme-system .widget {
-  background: #fff;
-  color: #000;
-}
-
-@media (prefers-color-scheme: dark) {
-  body.theme-system {
-    background: #000;
-    color: #fff;
-  }
-  body.theme-system .widget {
-    background: #333;
-    color: #fff;
-  }
-}
-
-.transparent-widgets .widget {
-  background: transparent;
-  box-shadow: none;
-}
-
 /* Top Right Controls */
 #topControls {
   position: fixed;
@@ -119,6 +84,28 @@ body.theme-system .widget {
   position: relative;
 }
 
+/* Transparent blur mode for backgrounds 3–6 */
+.blur-widget {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(5px);
+}
+
+/* Additional class to force text white on blurred widgets (for backgrounds 4–5) */
+.blur-dark {
+  color: #fff !important;
+}
+.blur-dark * {
+  color: #fff !important;
+}
+
+/* Dark mode for background2 */
+.dark-widget {
+  background: rgba(51, 51, 51, 0.8) !important;
+  color: #fff !important;
+}
+.dark-widget * {
+  color: #fff !important;
+}
 
 /* Location element for main & grid widgets */
 .location {
@@ -303,6 +290,25 @@ button {
   appearance: none;
 }
 
+/* Settings Modal Specific Styling */
+.background-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.background-grid .bg-preview {
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: border 0.2s;
+}
+.background-grid .bg-preview:hover {
+  border: 2px solid #007BFF;
+}
 
 /* Updated Add Widget Button (cssbuttons-io style) */
 .cssbuttons-io-button {

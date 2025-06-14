@@ -6,15 +6,12 @@ let selectedWidgetIndex = null;
 let schedulingMode = false;
 let scheduledTime = null;
 let ianaZoneMap = {};
-let theme = 'system';
-let transparentWidgets = false;
 
 function loadSettings() {
   const storedMainWidget = localStorage.getItem('mainWidget');
   const storedGridWidgets = localStorage.getItem('gridWidgets');
+  const storedBackground = localStorage.getItem('backgroundImage');
   const storedHoursFormat = localStorage.getItem('use24Hour');
-  const storedTheme = localStorage.getItem('theme');
-  const storedTransparent = localStorage.getItem('transparentWidgets');
 
   // Load main widget
   mainWidget = storedMainWidget
@@ -57,14 +54,10 @@ function loadSettings() {
     use24Hour = (storedHoursFormat === "true");
   }
   
-  if (storedTheme) {
-    theme = storedTheme;
+  // Set background if stored
+  if (storedBackground) {
+    document.body.style.backgroundImage = `url(${storedBackground})`;
   }
-  if (storedTransparent !== null) {
-    transparentWidgets = (storedTransparent === 'true');
-  }
-  applyTheme();
-  applyTransparency();
 }
 
 // Save to local storage
@@ -72,18 +65,31 @@ function saveSettings() {
   localStorage.setItem('mainWidget', JSON.stringify(mainWidget));
   localStorage.setItem('gridWidgets', JSON.stringify(gridWidgets));
   localStorage.setItem('use24Hour', use24Hour);
-  localStorage.setItem('theme', theme);
-  localStorage.setItem('transparentWidgets', transparentWidgets);
 }
 
 // ---------- Update Widget Styles Based on Background ----------
-function applyTheme() {
-  document.body.classList.toggle('theme-bw', theme === 'bw');
-  document.body.classList.toggle('theme-system', theme === 'system');
-}
-
-function applyTransparency() {
-  document.body.classList.toggle('transparent-widgets', transparentWidgets);
+function updateWidgetStyles(bgUrl) {
+  // All "widget" elements (main + bottom)
+  const widgets = document.querySelectorAll(".widget");
+  widgets.forEach(widget => {
+    widget.classList.remove("blur-widget", "dark-widget", "blur-dark");
+  });
+  // If background2 => dark
+  if (bgUrl.includes("background2.jpg")) {
+    widgets.forEach(widget => widget.classList.add("dark-widget"));
+  }
+  // If background4 or background5 => blur + white text
+  else if (bgUrl.includes("background4.jpg") || bgUrl.includes("background5.jpg")) {
+    widgets.forEach(widget => {
+      widget.classList.add("blur-widget");
+      widget.classList.add("blur-dark");
+    });
+  }
+  // If background3 or background6 => blur only
+  else if (bgUrl.includes("background3.jpg") || bgUrl.includes("background6.jpg")) {
+    widgets.forEach(widget => widget.classList.add("blur-widget"));
+  }
+  // background1 => no extra style
 }
 
 function getTimezoneOffset(timeZone, refTime) {
@@ -283,8 +289,10 @@ function renderGrid() {
     gridContainer.appendChild(addItem);
   }
 
-  applyTransparency();
-  applyTheme();
+  const storedBg = localStorage.getItem("backgroundImage");
+  if (storedBg) {
+    updateWidgetStyles(storedBg);
+  }
 }
 
 // ---------- Settings Modal Functionality ----------
@@ -300,8 +308,6 @@ const versionList = document.getElementById("versionList");
 
 settingsButton.addEventListener("click", () => {
   document.getElementById("hoursToggleText").innerText = use24Hour ? "24-hour" : "12-hour";
-  document.getElementById("themeToggleBtn").innerText = theme === 'bw' ? 'Black & White' : 'System';
-  document.getElementById("transparentToggleBtn").innerText = transparentWidgets ? 'On' : 'Off';
   settingsModal.style.display = "flex";
 });
 
@@ -356,6 +362,16 @@ window.addEventListener("click", (event) => {
   }
 });
 
+// Background previews
+const bgPreviews = document.querySelectorAll(".bg-preview");
+bgPreviews.forEach(preview => {
+  preview.addEventListener("click", () => {
+    const newBg = preview.getAttribute("data-bg");
+    document.body.style.backgroundImage = `url(${newBg})`;
+    localStorage.setItem("backgroundImage", newBg);
+    updateWidgetStyles(newBg);
+  });
+});
 
 // Hours toggle in settings
 const hoursToggleBtn = document.getElementById("hoursToggleBtn");
@@ -363,22 +379,6 @@ hoursToggleBtn.addEventListener("click", () => {
   use24Hour = !use24Hour;
   document.getElementById("hoursToggleText").innerText = use24Hour ? "24-hour" : "12-hour";
   localStorage.setItem("use24Hour", use24Hour);
-});
-
-const themeToggleBtn = document.getElementById('themeToggleBtn');
-themeToggleBtn.addEventListener('click', () => {
-  theme = theme === 'bw' ? 'system' : 'bw';
-  themeToggleBtn.innerText = theme === 'bw' ? 'Black & White' : 'System';
-  applyTheme();
-  saveSettings();
-});
-
-const transparentToggleBtn = document.getElementById('transparentToggleBtn');
-transparentToggleBtn.addEventListener('click', () => {
-  transparentWidgets = !transparentWidgets;
-  transparentToggleBtn.innerText = transparentWidgets ? 'On' : 'Off';
-  applyTransparency();
-  saveSettings();
 });
 
 // ---------- Country Selection ----------
@@ -554,6 +554,12 @@ document.addEventListener("fullscreenchange", () => {
 loadSettings();
 renderGrid();
 updateMainWidgetDisplay();
+
+// Re-apply blur/dark styling after grid is rendered
+const storedBg = localStorage.getItem("backgroundImage");
+if (storedBg) {
+  updateWidgetStyles(storedBg);
+}
 updateAllTimes();
 
 
