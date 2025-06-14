@@ -14,9 +14,13 @@ function loadSettings() {
   const storedHoursFormat = localStorage.getItem('use24Hour');
 
   // Load main widget
-  mainWidget = storedMainWidget 
-    ? JSON.parse(storedMainWidget) 
-    : { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone, name: null, flagUrl: null };
+  mainWidget = storedMainWidget
+    ? JSON.parse(storedMainWidget)
+    : {
+        timeZone: "Europe/London",
+        name: "United Kingdom",
+        flagUrl: "https://flagcdn.com/w320/gb.png"
+      };
 
   // Load grid widgets
   try {
@@ -307,6 +311,9 @@ closeSettings.addEventListener("click", () => {
 
 // Background previews
 const bgPreviews = document.querySelectorAll(".bg-preview");
+const bgContainer = document.getElementById("backgroundOptions");
+const bgPrevBtn = document.getElementById("bgPrev");
+const bgNextBtn = document.getElementById("bgNext");
 bgPreviews.forEach(preview => {
   preview.addEventListener("click", () => {
     const newBg = preview.getAttribute("data-bg");
@@ -314,6 +321,14 @@ bgPreviews.forEach(preview => {
     localStorage.setItem("backgroundImage", newBg);
     updateWidgetStyles(newBg);
   });
+});
+
+bgPrevBtn.addEventListener("click", () => {
+  bgContainer.scrollBy({ left: -100, behavior: "smooth" });
+});
+
+bgNextBtn.addEventListener("click", () => {
+  bgContainer.scrollBy({ left: 100, behavior: "smooth" });
 });
 
 // Hours toggle in settings
@@ -327,6 +342,7 @@ hoursToggleBtn.addEventListener("click", () => {
 // ---------- Country Selection ----------
 const countryModal = document.getElementById('countryModal');
 const countrySearchInput = document.getElementById('countrySearch');
+const clearSearchBtn = document.getElementById('clearSearch');
 const countryListDiv = document.getElementById('countryList');
 const closeModalSpan = document.getElementById('closeModal');
 
@@ -337,6 +353,12 @@ document.getElementById('changeMainTimeZone').addEventListener('click', () => {
 
 closeModalSpan.addEventListener('click', () => {
   countryModal.style.display = "none";
+});
+
+clearSearchBtn.addEventListener('click', () => {
+  countrySearchInput.value = '';
+  renderCountryList(countriesData);
+  countrySearchInput.focus();
 });
 window.addEventListener('click', (event) => {
   if (event.target === countryModal) {
