@@ -542,19 +542,14 @@ button {
 /* Fullscreen mode styling */
 :fullscreen .main-container {
   box-sizing: border-box;
-  margin: 0;
-  padding: 2rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 90vw;
+  margin: 30px auto 80px auto;
 }
 :fullscreen #topControls,
 :fullscreen #scheduleButton,
 :fullscreen #addWidget,
-:fullscreen #schedulingBanner {
+:fullscreen #schedulingBanner,
+:fullscreen #versionLink {
   display: none;
 }
 
