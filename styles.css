@@ -543,7 +543,8 @@ button {
 :fullscreen .main-container {
   box-sizing: border-box;
   width: 90vw;
-  margin: 30px auto 80px auto;
+  /* Use equal top and bottom margins in display mode */
+  margin: 30px auto;
 }
 :fullscreen #topControls,
 :fullscreen #scheduleButton,
